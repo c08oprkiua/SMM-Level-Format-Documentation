@@ -23,3 +23,21 @@ The level theme is located at byte offset `0x6D`, and will be a number between 0
 * 3: Airship theme
 * 4: Underwater theme
 * 5: Haunted House theme
+
+The time limit on the course is stored at offset `0x70`, and is 2 bytes long. 
+
+The autoscroll setting on the course area is set in offset `0x72`, and similarly to the theme, is a number between 0 and 3, representing one of the following:
+* 0: No autoscroll 
+* 1: Slow autoscroll
+* 2: Medium Autoscroll
+* 3: Fast Autoscroll
+
+Next is the flag byte, at offset `0x73`, with a byte length of 1. Not sure what this does.
+
+Next is kind of the beginning of the course data, but I will include it here because it's metadata *about the course*. 
+
+The width of the course, i.e. how long the course is from start to flagpole, is at offset `0x74`, with a byte duration of 4 bytes.
+
+Next is the Mii hex data, which starts at `0x78` and goes for 66 bytes.
+
+The object count (presumably, the number of objects placed, cause duh), is at offset `0xEC` and goes for 4 bytes. 
