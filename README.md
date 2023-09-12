@@ -9,3 +9,5 @@ Also, this documentation is very WIP, and is based on me reading through code th
 
 Credit to the following, which I used as references in writing this:
 * https://github.com/leomaurodesenv/smm-course-viewer/blob/master/lib/SmmCourseViewer.js
+* https://github.com/Treeki/MarioUnmaker/tree/master
+* https://github.com/aboood40091/PointlessMaker/tree/master
