@@ -1,2 +1,6 @@
 # SMM-Level-Format-Documentation
 Simple to read explanation of the layout of a Mario Maker (1) .cdt level file
+
+This exists because while people clearly know how these work (see [this](https://github.com/leomaurodesenv/smm-course-viewer/tree/master), for example), I could not find any simple to read documentation for the file's layout, such as where the metadata (name, author, etc.) is. So, I created this, so that people can easily read up on where to find things as to create their own implementations of level readers or even editors.
+
+I'm just a readme, not a cop, but please use this infromation responsibly. I don't want to see this information used for level plagarizing or intentionally hacked/unstable level creation to upload malociously to level databases. 
