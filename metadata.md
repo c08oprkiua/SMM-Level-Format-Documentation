@@ -14,3 +14,12 @@ Next is the various bytes of information relating to timestamps. I'm honestly no
 
 The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 66 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 33 characters for a level name. 
 
+Starting at offset `0x6A` is the mode, with a length of 2 bytes. Not sure what this does, again, but adding it here for the sake of completion.
+
+The level theme is located at byte offset `0x6D`, and will be a number between 0 and 5, corresponding to which visual theme the level uses;
+* 0: Overworld theme
+* 1: Underground theme
+* 2: Castle theme
+* 3: Airship theme
+* 4: Underwater theme
+* 5: Haunted House theme
