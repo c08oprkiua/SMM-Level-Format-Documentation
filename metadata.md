@@ -4,4 +4,13 @@ The first 8 bytes of the file are the version, which will look something like `0
 
 Next is a checksum, from the bytes `0x8` to `0xA`
 
-Next is the various bytes of information relating to timestamps.
+Next is the various bytes of information relating to timestamps. I'm honestly not sure what these do, as the reference file I've been using for double checking my information (some levels I dumped from my 3DS) have most of these zeroed out. This makes me think these are used for level uploading related functions, because the Wii U would have and thus create that information while the 3DS obviously wouldn't...? Anyways, for the sake of completeness, I will list them. They go as follows:
+
+* Year: located at byte offset `0xA`, with a length of 2 bytes
+* Month: located at byte offset `0xC`, with a length of 1 byte
+* Day: located at byte offset `0xD`, with a length of 1 byte
+* Hour: located at byte offset `0xE`, with a length of 1 byte
+* Minute: located at byte offset `0xF`, with a length of 1 byte
+
+The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 66 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 33 characters for a level name. 
+
