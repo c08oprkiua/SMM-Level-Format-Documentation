@@ -1,4 +1,26 @@
 As previously explained in the overview, metadata is everything besides the object and sound effect data. 
+
+If you've already read over this and/or know what everything is, here's a nice little table that summarizes the raw information on everything:
+| Property           | Byte type | Byte Start | Byte End | Byte Size |
+|--------------------|-----------|------------|----------|-----------|
+| Version            | u64       | `0x00`     | `0x07`   | 8         |
+| Checksum           | u32       | `0x08`     |          |           |
+| Creation Year      | u16       |            |          | 2         |
+| Creation Month     | u8        |            |          | 1         |
+| Creation Day       | u8        |            |          | 1         |
+| Creation Hour      | u8        |            |          | 1         |
+| Creation Minute    | u8        |            |          | 1         |
+| Level Name         | u16       | `0x28`     |          | 66        |
+| Level Author       |           |            |          |           |
+| Level Game         |           | `0x6A`     |          | 2         |
+| Level Theme        | u8        | `0x6D`     |          | 1         |
+| Time Limit         | u16       | `0x70`     |          | 2         |
+| Autoscroll Setting | u8        | `0x72`     |          | 1         |
+| Flag               |           | `0x73`     |          | 1         |
+| Level Width        |           | `0x74`     |          | 4         |
+| Mii Hex Data       |           | `0x78`     |          | 66        |
+| Object Count       | u32       | `0xEC`     |          | 4         |
+
 # Version
 The first 8 bytes of the file are the version, which will look something like `00 00 00 00 00 00 00 0B` in a hex editor. 
 # Checksum
