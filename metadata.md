@@ -11,7 +11,6 @@ If you've already read over this and/or know what everything is, here's a nice l
 | [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x14`|`0x14`| 1|
 | [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x15`|`0x15`| 1|
 | [Level Name](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-name)| u16| `0x28`|          | 66|
-| Level Author|           |`0x92`|`0xA6`|           |
 | [Level Game](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-game)|           | `0x6A`|`0x6B`| 2|
 | [Level Theme](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-theme)| u8|`0x6D`|`0x6D`| 1|
 | [Time Limit](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#time-limit)| u16|`0x70`|`0x71`| 2|
