@@ -33,6 +33,7 @@ Next is the file's checksum, from the bytes `0x8` to `0x9`. This is a CRC32 chec
 # Creation date and time
 Next is the various bytes of information relating to timestamps of the level's creation date. They go as follows:
 * Year: unsigned 16 bit integer, located at byte offset `0x10`, with a length of 2 bytes
+
 The following are all 8 bit integers:
 * Month: located at byte offset `0x12`, with a length of 1 byte
 * Day: located at byte offset `0x13`, with a length of 1 byte
