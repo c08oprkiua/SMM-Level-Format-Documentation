@@ -82,8 +82,8 @@ Next is the flag byte, at offset `0x73`, with a byte length of 1. Not sure what 
 The width of the level, i.e. how long the course is from start to flagpole, is an unsigned 32 bit integer at offset `0x74`, with a byte duration of 4 bytes.
 
 
-# Mii Hex Data
-Next is the Mii hex data, which starts at `0x78` and goes for 66 bytes.
+# Mii Data
+Next is the Mii data, which starts at `0x78` and goes for 66 bytes. This includes the information about the Mii of the level's author. 
 
 
 # Object Count
