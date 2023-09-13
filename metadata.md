@@ -1,25 +1,25 @@
 As previously explained in the overview, metadata is everything besides the object and sound effect data. 
 
 If you've already read over this and/or know what everything is, here's a nice little table that summarizes the raw information on everything:
-| Property           | Byte type | Byte Start | Byte End | Byte Size |
+| Property| Byte type | Byte Start | Byte End | Byte Size |
 |--------------------|-----------|------------|----------|-----------|
-| Version            | u64       | `0x00`     | `0x07`   | 8         |
-| Checksum           | u32       | `0x08`     |          |           |
-| [Creation Year](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)      | u16       |            |          | 2         |
-| [Creation Month](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)     | u8        |            |          | 1         |
-| [Creation Day](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)       | u8        |            |          | 1         |
-| [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)      | u8        |            |          | 1         |
-| [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)    | u8        |            |          | 1         |
-| Level Name         | u16       | `0x28`     |          | 66        |
-| Level Author       |           |            |          |           |
-| Level Game         |           | `0x6A`     |          | 2         |
-| Level Theme        | u8        | `0x6D`     |          | 1         |
-| Time Limit         | u16       | `0x70`     |          | 2         |
-| Autoscroll Setting | u8        | `0x72`     |          | 1         |
-| Flag               |           | `0x73`     |          | 1         |
-| Level Width        |           | `0x74`     |          | 4         |
-| Mii Hex Data       |           | `0x78`     |          | 66        |
-| Object Count       | u32       | `0xEC`     |          | 4         |
+| Version| u64| `0x00`| `0x07`| 8|
+| Checksum| u32| `0x08`|          |           |
+| [Creation Year](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u16|`0x0A`|          | 2|
+| [Creation Month](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x0C`|          | 1|
+| [Creation Day](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x0D`|          | 1|
+| [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x0E`|          | 1|
+| [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x0F`|          | 1|
+| [Level Name](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-name)| u16| `0x28`|          | 66|
+| Level Author|           |            |          |           |
+| [Level Game](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-game)|           | `0x6A`|          | 2|
+| [Level Theme](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-theme)| u8|`0x6D`|          | 1|
+| [Time Limit](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#time-limit)| u16|`0x70`|          | 2|
+| [Autoscroll Setting](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#autoscroll-setting) | u8|`0x72`|          | 1|
+| [Flag](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#flag)|           |`0x73`     |          | 1|
+| [Level Width](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-width)|           | `0x74`|          | 4|
+| [Mii Hex Data](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#mii-hex-data)|           | `0x78`|          | 66|
+| [Object Count](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#mii-hex-data)| u32| `0xEC`|          | 4|
 
 # Version
 The first 8 bytes of the file are the version, which will look something like `00 00 00 00 00 00 00 0B` in a hex editor. 
