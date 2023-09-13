@@ -4,10 +4,10 @@ Simple to understand explanation of the contents of a Super Mario Maker (1) .cdt
 This exists because while people clearly know how these work based off of the numerious editors and other things using these files out there, I could not find any standalone, simple to read documentation for the file's layout, such as where to find the metadata (name, author, etc.). So, I created this, so that people can easily read up on where to find various pieces of content within the file, as to create their own implementations of level readers or even editors, or just gain a better understanding of these files.
 
 # Table of Contents
-* File overview (coming soon)
+* [File overview](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/overview.md)
 * [The metadata of the file](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md)
-* What "objects" are, and their layout/contents (coming soon)
-* Object contents continued (coming soon)
+* Object layout/contents (coming soon)
+
 
 # Disclaimer and Credits
 I'm just a readme, not a cop, but please use this information responsibly. I don't want to see this information used for level plagarizing or intentionally hacked/unstable level creation to upload malociously to level databases. 
