@@ -5,11 +5,11 @@ If you've already read over this and/or know what everything is, here's a nice l
 |--------------------|-----------|------------|----------|-----------|
 | Version            | u64       | `0x00`     | `0x07`   | 8         |
 | Checksum           | u32       | `0x08`     |          |           |
-| Creation Year      | u16       |            |          | 2         |
-| Creation Month     | u8        |            |          | 1         |
-| Creation Day       | u8        |            |          | 1         |
-| Creation Hour      | u8        |            |          | 1         |
-| Creation Minute    | u8        |            |          | 1         |
+| [Creation Year](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)      | u16       |            |          | 2         |
+| [Creation Month](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)     | u8        |            |          | 1         |
+| [Creation Day](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)       | u8        |            |          | 1         |
+| [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)      | u8        |            |          | 1         |
+| [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)    | u8        |            |          | 1         |
 | Level Name         | u16       | `0x28`     |          | 66        |
 | Level Author       |           |            |          |           |
 | Level Game         |           | `0x6A`     |          | 2         |
