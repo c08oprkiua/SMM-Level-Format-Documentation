@@ -5,7 +5,7 @@ The first 8 bytes of the file are the version, which will look something like `0
 Next is the file's checksum, from the bytes `0x8` to `0xA`. This is a CRC32 checksum of the whole file, sans the bytes from this value and before (so, anything before `0x10`).
 # Creation date and time
 Next is the various bytes of information relating to timestamps of the level's creation date. They go as follows:
-* Year: located at byte offset `0xA`, with a length of 12 bytes
+* Year: located at byte offset `0xA`, with a length of 2 bytes
 * Month: located at byte offset `0xC`, with a length of 1 byte
 * Day: located at byte offset `0xD`, with a length of 1 byte
 * Hour: located at byte offset `0xE`, with a length of 1 byte
