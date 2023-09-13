@@ -43,4 +43,4 @@ The width of the course, i.e. how long the course is from start to flagpole, is 
 
 Next is the Mii hex data, which starts at `0x78` and goes for 66 bytes.
 
-The object count (presumably, the number of objects placed, cause duh), is at offset `0xEC` and goes for 4 bytes. 
+The object count is at offset `0xEC` and goes for 4 bytes. THis will be an unsigned 32 bit integer, with a presumed max value of a little under 2600 (2513 to be exact...?) because that's what the max object count in official Mario Maker is. You could try to increase this number for fun I guess, but I am not liable if your console explodes because of it.
