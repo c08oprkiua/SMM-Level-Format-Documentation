@@ -4,8 +4,7 @@ The first 8 bytes of the file are the version, which will look something like `0
 
 Next is a checksum, from the bytes `0x8` to `0xA`
 
-Next is the various bytes of information relating to timestamps. I'm honestly not sure what these do, as the reference file I've been using for double checking my information (some levels I dumped from my 3DS) have most of these zeroed out. This makes me think these are used for level uploading related functions, because the Wii U would have and thus create that information while the 3DS obviously wouldn't...? Anyways, for the sake of completeness, I will list them. They go as follows:
-
+Next is the various bytes of information relating to timestamps of the level's creation date. They go as follows:
 * Year: located at byte offset `0xA`, with a length of 2 bytes
 * Month: located at byte offset `0xC`, with a length of 1 byte
 * Day: located at byte offset `0xD`, with a length of 1 byte
@@ -14,7 +13,11 @@ Next is the various bytes of information relating to timestamps. I'm honestly no
 
 The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 66 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 33 characters for a level name. 
 
-Starting at offset `0x6A` is the mode, with a length of 2 bytes. Not sure what this does, again, but adding it here for the sake of completion.
+Starting at offset `0x6A` is the mode, with a length of 2 bytes. This refers to which Mario game the level is in, as follows:
+* M1: Super Mario Bros.
+* M3: Super Mario Bros. 3
+* MW: Super Mario World
+* MU: New Super Mario Bros. U
 
 The level theme is located at byte offset `0x6D`, and will be a number between 0 and 5, corresponding to which visual theme the level uses;
 * 0: Overworld theme
