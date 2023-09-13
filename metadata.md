@@ -2,7 +2,7 @@ As previously explained in the overview, metadata is everything besides the obje
 # Version
 The first 8 bytes of the file are the version, which will look something like `00 00 00 00 00 00 00 0B` in a hex editor. 
 # Checksum
-Next is the file's checksum, from the bytes `0x8` to `0xA`. This is a CRC32 checksum of the whole file, sans the bytes from this value and before (so, anything before `0x10`).
+Next is the file's checksum, from the bytes `0x8` to `0xA`. This is a CRC32 checksum of the whole file, sans the bytes from this value and before (so, anything before `0xA`).
 # Creation date and time
 Next is the various bytes of information relating to timestamps of the level's creation date. They go as follows:
 * Year: located at byte offset `0xA`, with a length of 2 bytes
