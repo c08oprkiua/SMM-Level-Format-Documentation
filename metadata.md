@@ -1,4 +1,4 @@
-Let's start at the beginning, literally. Hexidecimal by hexidecimal. 
+As previously explained in the overview, metadata is everything besides the object and sound effect data. 
 # Version
 The first 8 bytes of the file are the version, which will look something like `00 00 00 00 00 00 00 0B` in a hex editor. 
 # Checksum
@@ -36,8 +36,6 @@ The autoscroll setting on the course area is set in offset `0x72`, and similarly
 * 3: Fast Autoscroll
 # Flag
 Next is the flag byte, at offset `0x73`, with a byte length of 1. Not sure what this does.
-
-Next is kind of the beginning of the course data, but I will include it here because it's metadata *about the course*. 
 # Level Width
 The width of the course, i.e. how long the course is from start to flagpole, is at offset `0x74`, with a byte duration of 4 bytes.
 # Mii Hex Data
