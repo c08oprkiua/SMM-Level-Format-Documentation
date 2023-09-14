@@ -18,3 +18,4 @@ Credit to the following, which I used as references in writing this:
 * https://github.com/leomaurodesenv/smm-course-viewer/tree/master
 * https://github.com/Treeki/MarioUnmaker/tree/master
 * https://github.com/aboood40091/PointlessMaker/tree/master
+* https://github.com/Tarnadas/smmdb-lib/tree/master
