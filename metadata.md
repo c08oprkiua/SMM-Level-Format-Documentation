@@ -10,7 +10,7 @@ If you've already read over this and/or know what everything is, here's a nice l
 | [Creation Day](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x13`|`0x13`| 1|
 | [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x14`|`0x14`| 1|
 | [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x15`|`0x15`| 1|
-| [Level Name](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-name)| u16| `0x28`|          | 66|
+| [Level Name](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-name)| u16| `0x28`|`0x68`| 64|
 | [Level Game](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-game)|           | `0x6A`|`0x6B`| 2|
 | [Level Theme](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-theme)| u8|`0x6D`|`0x6D`| 1|
 | [Time Limit](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#time-limit)| u16|`0x70`|`0x71`| 2|
@@ -42,7 +42,7 @@ The following are all 8 bit integers:
 (Also, am I the only one that finds it kinda weird that Nintendo decided to track this down to the *minute?* Yes? Just me? Ok.)
 
 # Level Name
-The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 66 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 33 characters for a level name. 
+The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 64 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 32 characters for a level name. 
 
 
 # Level Game
@@ -85,7 +85,7 @@ The width of the level, i.e. how long the course is, in blocks, from start to fl
 
 # Mii Data
 Next is the Mii data, which starts at `0x78` and goes for 66 bytes. This includes the information about the Mii of the level's author. I'll add to this, I swear, but it's almost enough to warrant it's own subsection, and most definitely it's own table, if that gives any indication to the level of explanation I'll have to do.
-
+* Mii Name (The author's name) starts at byte offset `0x92` and is 20 bytes long, ending at `0xA5`
 
 # Object Count
 The object count is at offset `0xEC` and goes for 4 bytes. This will be an unsigned 32 bit integer, with a presumed max value of a little under 2600 (2513 to be exact...?) because that's what the max object count in official Mario Maker is. You could try to increase this number for fun I guess, but I am not liable if your console explodes because of it. Changing this number will most likely **not** magically make you able to place more objects without consequence, that consequence being file corruption, due to the game possibly trying to write more objects into the file than said file is designed to have.
