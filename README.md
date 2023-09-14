@@ -5,8 +5,8 @@ This exists because while people clearly know how these work based off of the nu
 
 # Table of Contents
 * [File overview](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/overview.md)
-* [The metadata of the file](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md)
-* Object layout/contents (coming soon)
+* [Metadata layout/contents](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md)
+* [Object layout/contents](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/objects.md)
 
 
 # Disclaimer and Credits
