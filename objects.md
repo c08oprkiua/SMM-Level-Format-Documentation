@@ -1,5 +1,5 @@
 # Object Layout
-Objects are 33 byte long chunks of data, stored one after the other, starting at offset `0xF0`, which take up a majority of the data in the file for obvious reasons. They contain information about the coordinates of the object, the type of object it is, the size if it's resizable, sound effects if any are applied, an ID specifically used for warp pipes and others to link two or more objects to each other, and more. 
+Objects are 32 byte long chunks of data, stored one after the other, starting at offset `0xF0`, which take up a majority of the data in the file for obvious reasons. They contain information about the coordinates of the object, the type of object it is, the size if it's resizable, sound effects if any are applied, an ID specifically used for warp pipes and others to link two or more objects to each other, and more. 
 
 Objects sometimes can have child objects in their data. This, for example, would be the case for a ? block that has a mushroom inside of it; The block is the parent and the mushroom is the child. 
 
