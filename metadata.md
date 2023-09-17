@@ -3,7 +3,7 @@ As previously explained in the overview, metadata is everything besides the obje
 If you've already read over this and/or know what everything is, here's a nice little table that summarizes the raw information on everything:
 | Property| Byte type | Byte Start | Byte End | Byte Size |
 |--------------------|-----------|------------|----------|-----------|
-| [Version](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#version)| u64| `0x00`| `0x07`| 8|
+| [File Magic](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#file-magic)| u64| `0x00`| `0x07`| 8|
 | [Checksum](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#checksum)| u32| `0x08`|          |           |
 | [Creation Year](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u16|`0x10`|`0x11`| 2|
 | [Creation Month](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x12`|`0x12`| 1|
@@ -21,8 +21,8 @@ If you've already read over this and/or know what everything is, here's a nice l
 | [Object Count](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#mii-hex-data)| u32| `0xEC`|`0xEF`| 4|
 
 
-# Version
-The first 8 bytes of the file are the version, stored as an unsigned 64 bit integer, which will look something like `00 00 00 00 00 00 00 0B` in a hex editor. What "version" means, I'm not entirely sure, cause all the sources I have seen so far just refer to it as "version" and not much more beyond that. My guess is it's the version of Mario Maker the level was made in, so that if Nintendo were to ever update the game and change the file layout, it can be used for legacy detection so the game knows the level is an old level with an old file layout, and not a new one. 
+# File Magic
+The first 8 bytes of the file are the file magic, stored as an unsigned 64 bit integer, which will look like `00 00 00 00 00 00 00 0B` in a hex editor (or, in other words, "11"). This is a feature of every proprietary file format by Nintendo, which allows the file type to be uniquely identified by this 8 byte header. In this case, it says that this is a Super Mario Maker level. 
 
 
 # Checksum
