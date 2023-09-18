@@ -4,14 +4,14 @@ If you've already read over this and/or know what everything is, here's a nice l
 | Property| Byte type | Byte Start | Byte End | Byte Size |
 |--------------------|-----------|------------|----------|-----------|
 | [File Magic](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#file-magic)| u64| `0x00`| `0x07`| 8|
-| [Checksum](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#checksum)| u32| `0x08`|          |           |
+| [Checksum](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#checksum)| u32| `0x08`|`0x0B`|4|
 | [Creation Year](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u16|`0x10`|`0x11`| 2|
 | [Creation Month](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x12`|`0x12`| 1|
 | [Creation Day](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x13`|`0x13`| 1|
 | [Creation Hour](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x14`|`0x14`| 1|
 | [Creation Minute](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#creation-date-and-time)| u8|`0x15`|`0x15`| 1|
 | [Level Name](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-name)| u16| `0x28`|`0x68`| 64|
-| [Level Game](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-game)|           | `0x6A`|`0x6B`| 2|
+| [Level Game](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-game)|char2| `0x6A`|`0x6B`| 2|
 | [Level Theme](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#level-theme)| u8|`0x6D`|`0x6D`| 1|
 | [Time Limit](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#time-limit)| u16|`0x70`|`0x71`| 2|
 | [Autoscroll Setting](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#autoscroll-setting) | u8|`0x72`|`0x72`| 1|
