@@ -1,4 +1,4 @@
-A .cdt file is roughtly laid out as:
+A .cdt file is a big-endian file, roughtly laid out as:
 | Category| First Byte | Last Byte | Byte Size |
 |---------------|------------|-----------|-----------|
 | Metadata|`0x00`|`0xEF`|           |
