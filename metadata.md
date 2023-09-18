@@ -31,15 +31,23 @@ Next is the file's checksum, from the bytes `0x8` to `0x9`. This is a CRC32 chec
 
 # Creation date and time
 Next is the various bytes of information relating to timestamps of the level's creation date. They go as follows:
-* Year: unsigned 16 bit integer, located at byte offset `0x10`, with a length of 2 bytes
+* Year: unsigned 16 bit integer, located at byte offset `0x10`, with a length of 2 bytes.
 
 The following are all 8 bit integers:
-* Month: located at byte offset `0x12`, with a length of 1 byte
-* Day: located at byte offset `0x13`, with a length of 1 byte
-* Hour: located at byte offset `0x14`, with a length of 1 byte
-* Minute: located at byte offset `0x15`, with a length of 1 byte
+* Month: located at byte offset `0x12`, with a length of 1 byte.
+* Day: located at byte offset `0x13`, with a length of 1 byte.
+* Hour: located at byte offset `0x14`, with a length of 1 byte. This is in Military time. 
+* Minute: located at byte offset `0x15`, with a length of 1 byte.
 
 (Also, am I the only one that finds it kinda weird that Nintendo decided to track this down to the *minute?* Yes? Just me? Ok.)
+
+# Event Level Metadata
+
+# Event Level Main Flag
+
+# Course World Intro Metadata
+
+# Course Version
 
 # Level Name
 The name of the level is something you can actually likely see yourself if you load the .cdt into a hex editor. It starts at the byte offset `0x28` and continues for 64 bytes, with a 1 byte gap of information between each character, which I'm guessing is for the sake of properly reading each character or something. This, if my math is right, means that there is a hard coded limit of about 32 characters for a level name. 
@@ -64,7 +72,7 @@ The level theme is an unsigned 8 bit integer located at byte offset `0x6D`, and 
 
 
 # Time Limit
-The time limit on the course is stored at offset `0x70` as an unsigned 16 bit integer, and is 2 bytes long. I'm not sure what happens if you set it to a number that isn't one of the locked intervals Nintendo provided (eg. above 500). 
+The time limit on the course is stored at offset `0x70` as an unsigned 16 bit integer, and is 2 bytes long. This can be a number much higher than the 500 second max that Nintendo put into the SMM editor without issue, just make sure it's a number that fits in the 2 byte space.
 
 
 # Autoscroll Setting
