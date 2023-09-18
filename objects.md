@@ -13,7 +13,8 @@ The width and height of an object are stored in bytes `0x0A` and `0x0B` respecti
 # Object Flags
 
 # Extended Object Data
-This is used for specific data for some objects, such as the initial rotation value of a fire bar. 
+This is used for specific data for some objects, such as the initial rotation value of a fire bar
+
 # Object Type
 
 # Object Link ID
