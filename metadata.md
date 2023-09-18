@@ -43,7 +43,8 @@ The following are all 8 bit integers:
 
 # Event Level Metadata
 
-# Event Level Main Flag
+# Event Level Flag
+This is a flag at `0x17` that indicates that the level is specifically an Event level, if it is 29.
 
 # Course World Intro Metadata
 
