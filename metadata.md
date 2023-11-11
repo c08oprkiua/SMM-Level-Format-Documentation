@@ -1,7 +1,7 @@
 As previously explained in the overview, metadata is everything besides the object and sound effect data. 
 
 If you've already read over this and/or know what everything is, here's a nice little table that summarizes the raw information on everything:
-| Property| Byte type | Byte Start | Byte End | Byte Size |
+| Property| Data type | Byte Start | Byte End | Byte Size |
 |--------------------|-----------|------------|----------|-----------|
 | [File Magic](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#file-magic)| u64| `0x00`| `0x07`| 8|
 | [Checksum](https://github.com/c08oprkiua/SMM-Level-Format-Documentation/blob/main/metadata.md#checksum)| u32| `0x08`|`0x0B`|4|
