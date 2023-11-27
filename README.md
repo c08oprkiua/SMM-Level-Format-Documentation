@@ -20,3 +20,5 @@ Credit to the following, which I used as references in writing this:
 * https://github.com/aboood40091/PointlessMaker/tree/master
 * https://github.com/Tarnadas/smmdb-lib/tree/master
 * @thecloneofaclone on Discord
+
+If you have any questions, join my [Discord](https://discord.com/invite/Mu6YUEmerN), or create an issue for this repo.
